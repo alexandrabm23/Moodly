@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodly - Chatbot</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="app-body">
+
+    <header class="header">
+        <div class="brand">
+            <a href="app.html">
+                <img src="imagenes/logo.png" alt="Moodly Logo" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="app.html">Registro del día</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="pomodoro.html">Pomodoro</a>
+            <a href="chatbot.html" class="active">Chatbot</a>
+            <a href="tareas.html">Tareas</a>
+        </nav>
+        <div class="user-profile">
+            <span id="userNameDisplayChat">Usuario</span>
+            <a href="index.html" class="logout-link">Cerrar sesión</a>
+        </div>
+    </header>
+
+    <main class="chat-container">
+        <div class="chat-card">
+            <!-- Encabezado del chat con logo de imagen -->
+            <div class="chat-header">
+                <img src="imagenes/chatbot.png" alt="Logo" class="chat-header-logo">
+                <h2>Moodly</h2>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="bot-avatar">
+                        <img src="imagenes/chatbot.png" alt="Avatar">
+                    </div>
+                    <div class="message-bubble">Hola 👋 Soy Moodly, tu compañero de bienestar. ¿Cómo te sientes hoy?</div>
+                </div>
+            </div>
+
+            <div id="chatOptions" class="chat-options">
+                <button class="option-btn" data-type="estresada">Cansada / Estresada</button>
+                <button class="option-btn" data-type="triste">Triste / Desanimada</button>
+                <button class="option-btn" data-type="bien">Bien / Tranquila</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 - Moodly</p>
+    </footer>
+
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

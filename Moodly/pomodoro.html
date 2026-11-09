@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodly - Timer Pomodoro</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="app-body">
+
+    <header class="header">
+        <div class="brand">
+            <div class="brand">
+            <a href="app.html"></a>
+            <img src="imagenes/logo.png" alt="Moodly Logo" class="logo-img"> </a>
+        </div>
+        </div>
+        <nav class="nav">
+            <a href="app.html">Registro del día</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="pomodoro.html" class="active">Pomodoro</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="tareas.html">Tareas</a>
+        </nav>
+        <div class="user-profile">
+            <span id="userNameDisplayPomodoro">Usuario</span>
+            <a href="index.html" class="logout-link">Cerrar sesión</a>
+        </div>
+    </header>
+
+    <main class="app-container" style="max-width: 500px;">
+        <div class="survey-card" style="text-align: center;">
+            <h2 class="survey-title">Timer Pomodoro</h2>
+
+            <div class="form-group" style="text-align: left;">
+                <label>Nombre del Curso</label>
+                <input type="text" id="courseName" placeholder="Ej. Cálculo II">
+            </div>
+
+            <div class="pomodoro-display">
+                <h1 id="timerText">25:00</h1>
+            </div>
+
+            <div class="pomodoro-controls">
+                <button id="startPomodoroBtn" class="primary-btn">Iniciar</button>
+                <button id="resetPomodoroBtn" class="chip-btn" style="margin-top: 10px; width: 100%;">Reiniciar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 - Moodly</p>
+    </footer>
+
+    <script src="js/pomodoro.js"></script>
+</body>
+</html>

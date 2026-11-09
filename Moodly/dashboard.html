@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodly - Mi Bienestar</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="app-body">
+
+    <header class="header">
+        <div class="brand">
+           <div class="brand">
+            <a href="app.html"></a>
+            <img src="imagenes/logo.png" alt="Moodly Logo" class="logo-img"> </a>
+        </div>
+        </div>
+        <nav class="nav">
+            <a href="app.html">Registro del día</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="pomodoro.html">Pomodoro</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="tareas.html">Tareas</a>
+        </nav>
+        <div class="user-profile">
+            <span id="userNameDisplayDashboard">Usuario</span>
+            <a href="index.html" class="logout-link">Cerrar sesión</a>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <div class="survey-card">
+            <h2 class="survey-title">Mi bienestar semanal</h2>
+            
+            <!-- Gráfico Semanal Estilo Figma -->
+            <div class="weekly-chart-container">
+                <div class="chart-bars">
+                    <div class="bar-col" data-day="L"><div class="bar" id="bar-L"></div><span>L</span></div>
+                    <div class="bar-col" data-day="M"><div class="bar" id="bar-M"></div><span>M</span></div>
+                    <div class="bar-col" data-day="X"><div class="bar" id="bar-X"></div><span>X</span></div>
+                    <div class="bar-col" data-day="J"><div class="bar" id="bar-J"></div><span>J</span></div>
+                    <div class="bar-col" data-day="V"><div class="bar" id="bar-V"></div><span>V</span></div>
+                    <div class="bar-col" data-day="S"><div class="bar" id="bar-S"></div><span>S</span></div>
+                    <div class="bar-col" data-day="D"><div class="bar" id="bar-D"></div><span>D</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-cards-grid">
+            <div class="dash-card">
+                <h3>Horas de sueño</h3>
+                <p class="dash-value" id="statSleep">-- horas</p>
+                <span>Promedio diario</span>
+            </div>
+            <div class="dash-card">
+                <h3>Factor principal</h3>
+                <p class="dash-value" id="statFactor">Ninguno</p>
+                <span>Mayor impacto</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 - Moodly</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
